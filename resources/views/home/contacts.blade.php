@@ -2,11 +2,6 @@
 
 @section('content')
 
-<style media="screen">
-  .heading3{
-    padding-left: 8%;
-  }
-</style>
 
 <section class="spotlight C-parallax bg-cover bg-size--cover" data-spotlight="fullscreen">
     <span class="mask bg-tertiary alpha-5"></span>
@@ -40,132 +35,77 @@
 
 </section><br><br><br><br>
 
-<!-- <section>
-  <div class="slice bg-primary my-sec">
-    <div class="container">
-      <div class="row align-items-center cols-xs-space cols-sm-space cols-md-space text-center text-lg-left">
-        <div class="col-lg-7">
-          <h1 class="heading h2 text-white strong-500">
-            FAQ
-          </h1>
-          <p class="lead text-white mb-0">Here are a few questions that our clients often have. </p>
+<section class="slice">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="text-center pt-lg-md">
+                <h2 class="heading h1 mb-4">
+                  Wanna Contact us?
+                </h2>
+                <p class="lead lh-180">
+                  Feel free to drop your Questions here.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-  </div>
-</section> -->
-
-<section>
-    <div class="container">
-      <div class="heading3">
-        <h3>Here are a few questions that our clients often have. </h3>
-      </div>
-    </div>
-
-</section>
+      </section>
 
 
-<section id="wrapper">
-<div class="my-container">
-   <ul class="accordion my-ul">
-      <li class="item">
-         <h2 class="accordionTitle">What are the payment gateways available?<span class="accIcon"></span></h2>
-         <div class="text">You could pay us by either Stripe, Razorpay or PAYTM.</div>
-      </li>
-      <li class="item">
-         <h2 class="accordionTitle">What to do on failure of payment? <span class="accIcon"></span></h2>
-         <div class="text">Please check your bank account for any updates on your account and retry after a little while.</div>
-      </li>
-      <li class="item">
-         <h2 class="accordionTitle">How do I know if my transaction was successful? <span class="accIcon"></span></h2>
-         <div class="text">On success of the payment, you will recieve a mail from us on your registered email-id</div>
-      </li>
-      <li class="item">
-         <h2 class="accordionTitle">Do I need to have a bank account in order to make the<br> payment?<span class="accIcon"></span></h2>
-         <div class="text">Yes, it will be necessary for you to have a bank account</div>
-      </li>
-      <li class="item">
-         <h2 class="accordionTitle">Can I make payments to the company in installments?<span class="accIcon"></span></h2>
-         <div class="text">Yes, if approved at time of project documentation, the you are permitted to make the payment in installments.<br> Else, you are required to pay the whole amount in once.</div>
-      </li>
-      <li class="item">
-         <h2 class="accordionTitle">Can I make payments to the company in installments?<span class="accIcon"></span></h2>
-         <div class="text">Yes, if approved at time of project documentation, the you are permitted to make the payment in installments.<br> Else, you are required to pay the whole amount in once.</div>
-      </li>
-   </ul>
-</div>
-</section>
-
-
-    <section class="py-xl">
-      <!-- <span class="mask bg-primary alpha-6"></span> -->
-        <div class="container d-flex align-items-center no-padding">
-            <div class="col">
+      <section class="slice slice-lg">
+        <div class="container">
+          <div class="row align-items-center cols-xs-space cols-sm-space cols-md-space">
+            <div class="col-lg-6">
+              <h3 class="heading h3 mb-4">Send us a message</h3>
+              <form method="POST" action="{{url('/contactsuccess')}}">
                 <div class="row">
-                  <div class="col-md-12">
-                      <div class="card bg-tertiary text-white">
-                          <div class="card-body">
-                              <h2 class="heading pt-3 pb-2 text-white">
-                                We'd love to hear from you<br />
-                              </h2><br><br>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Name" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Email address" type="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <button type="submit" class="btn btn-primary px-4">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-5 ml-lg-auto">
+              <h3 class="heading heading-3 strong-200">
+                4TH FLR, KAMLESHWAR BUILDING, 19-JAI HIND SOCIETY, N.S. ROAD, 11/12,J.V.P.D. SCHEME, JUHU,
+                <br>
+                  Mumbai, Maharashtra 400049
+              </h3>
+              <p class="lead mt-4 mb-4">
+                E: <a href="#">support@webpixels.io</a>
+                <br>
+                T: 0755.222.333
+              </p>
+              <p class="">
+                ROSHNI Foundation works through collaborative partnerships and advocacy initiatives with civil society organizations, government agencies, media and other stakeholders to promote justice, gender equality, and create access to SRHR information, and to advocate human rights of all individuals.
+            </div>
+          </div>
+        </div>
+      </section>
 
 
-
-
-<form method="POST" action="{{ url('/contactsuccess') }}">
-<div class="form-row">
-{{ csrf_field() }}
-<div class="col-md-12 mb-3">
-<label for="validationServer01">First name</label>
-<input type="text" class="form-control " id="validationServer01" placeholder="What do we call you?" name="first_name" required>
-</div>
-</div><br>
-<div class="form-row">
-<div class="col-lg-6 mb-3">
-<label for="validationServer05">Contact Number</label>
-<input type="text" value="" autocomplete="on" class="form-control " id="validationServer05" name="contact" placeholder="Contact Number">
-</div>
-
-<div class="col-lg-6 mb-3">
-<label for="validationServer05">Email id</label>
-<input type="text" value="" autocomplete="on" class="form-control " id="validationServer05" name="email" placeholder="Email ID">
-</div>
-</div><br>
-
-<div class="form-row">
-<div class="col-lg-12 mb-3">
-<label for="validationServer05">Subject</label>
-<input type="text" value="" autocomplete="on" class="form-control " id="validationServer05" name="subject" placeholder="Subject">
-</div>
-</div><br>
-
-<div class="form-row">
-<div class="col-lg-12 mb-3">
-<textarea name="comments" rows="8" cols="125" placeholder="Comment your qoutes here..."></textarea>
-</div>
-</div>
-
-
-
-<button class="btn btn-primary" type="submit">Submit form</button> &nbsp;&nbsp;&nbsp;&nbsp;
-<button class="btn btn-warning" type="reset">Reset</button>
-
-
-</div><br>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<br><br>
-
-</form>
-</div>
-
-</div>
-</section><br><br>
 <section class="slice bg-primary">
       <div class="container">
         <div class="row align-items-center cols-xs-space cols-sm-space cols-md-space text-center text-lg-left">
@@ -177,8 +117,8 @@
           </div>
           <div class="col-lg-3 ml-lg-auto">
             <div class="text-center text-md-right">
-              <a href="https://icrewsystems.com/portal/index.php/tickets" class="btn bg-secondary">
-                Get in touch
+              <a href="{{url('/faq')}}" class="btn bg-secondary">
+                FAQ
               </a>
             </div>
           </div>
