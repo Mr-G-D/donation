@@ -167,21 +167,32 @@
 <div class="form-row">
   <label for="validationServer05">How often will you be able to help?</label>
   <div class="col-lg-12 mb-6"><br>
+    <fieldset id="group1">
+      <div class="col-lg-12 mb-6">
+       <input type="radio" value="value1" name="group1">
+       <label for="validationServer05">I can lead initiatives</label>
+     </div>
 
-    <input type="radio" value=""  placeholder="I can lead initiatives">
-    <label for="validationServer05">I can lead initiatives</label>
-  </div>
-  <div class="col-lg-12 mb-6">
-    <input type="radio" value=""  placeholder="I can lead initiatives">
-    <label for="validationServer05">Multiple Days in a week</label>
-  </div>
-  <div class="col-lg-12 mb-6">
-    <input type="radio" value=""  placeholder="I can lead initiatives">
-    <label for="validationServer05">Once a week</label>
-  </div>
-  <div class="col-lg-12 mb-6">
-    <input type="radio" value=""  placeholder="I can lead initiatives">
-    <label for="validationServer05">Twice a month</label>
+     <div class="col-lg-12 mb-6">
+       <input type="radio" value="value2" name="group1">
+       <label for="validationServer05">Multiple Days in a week</label>
+     </div>
+
+     <div class="col-lg-12 mb-6">
+       <input type="radio" value="value3" name="group1">
+       <label for="validationServer05">Once a week</label>
+     </div>
+
+       <div class="col-lg-12 mb-6">
+       <input type="radio" value="value4" name="group1">
+       <label for="validationServer05">Twice a month</label>
+
+     </div>
+
+
+
+
+    </fieldset>
   </div><br><br>
 
 
